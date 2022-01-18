@@ -1,10 +1,14 @@
 class TVM():
 
-    def get_ear(self,ear,account,periodic_rate,month,annual_rate) -> float:
-        self.ear = ear
-        self.account = account
-        self.periodic_rate = periodic_rate
-        self.month = month
-        self.annual_rate = annual_rate
+    def get_ear(r,m):
+        r = r/100
+        i = 1 + r / m
+        i = pow(i,m)
+        i = i - 1
+        return i
 
-        ear = (1+ )
+    print(get_ear(8,4))
+
+
+
+
